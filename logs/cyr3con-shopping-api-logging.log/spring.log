@@ -1,0 +1,17 @@
+2020-09-01 19:28:42.278  INFO 11404 --- [main] c.c.shopapi.shopapi.ShopapiApplication   : Starting ShopapiApplication on My-PC with PID 11404 (C:\Users\Owner\Desktop\PM\Top Shop Final Backup\Top-Shop-e-commerce\Back-End\shopapi\target\classes started by Owner in C:\Users\Owner\Desktop\PM\Top Shop Final Backup\Top-Shop-e-commerce\Back-End\shopapi)
+2020-09-01 19:28:42.282 DEBUG 11404 --- [main] c.c.shopapi.shopapi.ShopapiApplication   : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-01 19:28:42.285  INFO 11404 --- [main] c.c.shopapi.shopapi.ShopapiApplication   : No active profile set, falling back to default profiles: default
+2020-09-01 19:28:48.333  INFO 11404 --- [main] c.c.shopapi.shopapi.ShopapiApplication   : Started ShopapiApplication in 7.102 seconds (JVM running for 8.97)
+2020-09-01 19:28:48.337 DEBUG 11404 --- [main] c.c.s.s.repository.ProductRepository     : Product(id=1, name=Mac, price=2000.0, stock=20, description=this is Mac, category=Category(id=1, categoryName=laptop, description=this is laptop))
+2020-09-01 19:28:48.337 DEBUG 11404 --- [main] c.c.s.s.repository.ProductRepository     : Product(id=2, name=Iphone, price=1000.0, stock=10, description=this is Iphone, category=Category(id=1, categoryName=mobile, description=this is mobile))
+2020-09-01 19:30:04.691 DEBUG 11404 --- [http-nio-8080-exec-2] c.c.s.shopapi.api.server.ProductApi      : getting product details.
+2020-09-01 19:30:07.919 DEBUG 11404 --- [http-nio-8080-exec-3] c.c.s.shopapi.api.server.ProductApi      : getting product details.
+2020-09-01 19:30:10.263 DEBUG 11404 --- [http-nio-8080-exec-4] c.c.s.shopapi.api.server.ProductApi      : getting product details.
+2020-09-01 19:30:12.470 DEBUG 11404 --- [http-nio-8080-exec-5] c.c.s.shopapi.api.server.ProductApi      : getting product details.
+2020-09-01 19:30:13.663 DEBUG 11404 --- [http-nio-8080-exec-6] c.c.s.shopapi.api.server.ProductApi      : getting product details.
+2020-09-01 19:30:14.658 DEBUG 11404 --- [http-nio-8080-exec-7] c.c.s.shopapi.api.server.ProductApi      : getting product details.
+2020-09-01 19:30:19.209 DEBUG 11404 --- [http-nio-8080-exec-8] c.c.shopapi.shopapi.api.server.OrderApi  : Placing Order...
+2020-09-01 19:30:20.273 DEBUG 11404 --- [http-nio-8080-exec-9] c.c.shopapi.shopapi.api.server.OrderApi  : Placing Order...
+2020-09-01 19:30:22.162 DEBUG 11404 --- [http-nio-8080-exec-10] c.c.shopapi.shopapi.api.server.OrderApi  : Placing Order...
+2020-09-01 19:30:48.185 DEBUG 11404 --- [http-nio-8080-exec-2] c.c.shopapi.shopapi.api.server.OrderApi  : Placing Order...
+2020-09-01 19:30:49.201 DEBUG 11404 --- [http-nio-8080-exec-4] c.c.shopapi.shopapi.api.server.OrderApi  : Placing Order...
