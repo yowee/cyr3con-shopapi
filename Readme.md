@@ -36,7 +36,7 @@ Get Product with quantity Get http://localhost:8080/api/product
 
 ## <a name="contributor"></a>Architecture
 
-I used command query and hexagonal architecture to separate technology business logic, to make the application loose-couple,extensible and testable. 
+I used command query and hexagonal architecture to separate technology from business logic, to make the application loose-couple,extensible and testable. 
 
 
 ## <a name="contributor"></a>Contributor
