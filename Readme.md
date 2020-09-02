@@ -4,7 +4,8 @@
 
 *Use docker 
 
-*Use maven
+*clone the project -> navigate to the folder open cmd run ./mvnw spring-boot:run
+
 
 ## <a name="using-application"></a>Using the application
 Create order Post 
