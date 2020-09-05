@@ -4,12 +4,14 @@
 
 *Use docker 
 
-*clone the project -> navigate to the folder open cmd run ./mvnw spring-boot:run
+*clone the project -> navigate to the folder -> open cmd -> run ./mvnw spring-boot:run
 
 
 ## <a name="using-application"></a>Using the application
-Create order Post 
-http://localhost:8080/api/order/ 
+Create order:
+
+       http POST http://localhost:8080/api/order/
+ 
 
 Body
 ```json
@@ -21,8 +23,9 @@ Body
        "zipCode":"52557"
    },
    "billingAddress":{
-    "street":"100 n4th street",
-      
+       "street":"100 n4th street",
+       "city":"fairfield",
+       "state":"IA",
        "zipCode":"52557"
    },
 "orderLines":[{
@@ -31,9 +34,10 @@ Body
 }]
 }
 ```
+Get Product with quantity:
 
-Get Product with quantity Get http://localhost:8080/api/product
-
+      Http Get http://localhost:8080/api/product
+  
 ## <a name="contributor"></a>Architecture
 
 I used command query and hexagonal architecture to separate technology from business logic, to make the application loose-couple,extensible and testable. 
