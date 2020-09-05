@@ -1,4 +1,4 @@
-# Simple Shop Api
+# Simple Shop API
 ## <a name="contributor"></a>Three ways to run the project
 *Clone the project and run it on your IDE
 
@@ -36,14 +36,14 @@ Body
 ```
 Get Product with quantity:
 
-      Http Get http://localhost:8080/api/product
+      http Get http://localhost:8080/api/product
   
-## <a name="contributor"></a>About the Webservice
+## <a name=""></a>About the Webservice
 
 I used command query and hexagonal architecture to separate technology from business logic, to make the application loose-couple, extensible and testable.
 I have Implemented Custom Exception, Custom Log format and Log level configuration.
 I used Springdoc under open API Specification.
-I wrote only one simple test Case because of the time limit.
+I wrote only one simple testcase because of the time limit.
 I have also tried to write package level java documentation.
 
 
