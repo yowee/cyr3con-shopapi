@@ -1,8 +1,6 @@
 # Simple Shop API
-## <a name="contributor"></a>Three ways to run the project
+## <a name="contributor"></a>Two ways to run the project
 *Clone the project and run it on your IDE
-
-*Use docker 
 
 *clone the project -> navigate to the folder -> open cmd -> run ./mvnw spring-boot:run
 
