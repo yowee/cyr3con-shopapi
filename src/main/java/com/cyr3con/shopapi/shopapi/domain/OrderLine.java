@@ -10,6 +10,7 @@ public class OrderLine implements Serializable {
 
     private Long id;
     private Integer productId;
+    @Min(value=1, message="must be equal or greater than 1")
     private Integer quantity;
 
 
