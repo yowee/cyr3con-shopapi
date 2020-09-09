@@ -2,12 +2,12 @@ package com.cyr3con.shopapi.shopapi.command.service;
 
 
 import com.cyr3con.shopapi.shopapi.command.action.ProductCommandAction;
-import com.cyr3con.shopapi.shopapi.domain.Product;
+import com.cyr3con.shopapi.shopapi.entity.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ProductCommandService{
+public class ProductCommandService {
 
     @Autowired
     ProductCommandAction productCommandAction;

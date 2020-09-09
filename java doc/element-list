@@ -1,0 +1,12 @@
+com.cyr3con.shopapi.shopapi
+com.cyr3con.shopapi.shopapi.api.respose
+com.cyr3con.shopapi.shopapi.api.server
+com.cyr3con.shopapi.shopapi.command.action
+com.cyr3con.shopapi.shopapi.command.service
+com.cyr3con.shopapi.shopapi.entity
+com.cyr3con.shopapi.shopapi.exception
+com.cyr3con.shopapi.shopapi.exception.handler
+com.cyr3con.shopapi.shopapi.loader
+com.cyr3con.shopapi.shopapi.query.action
+com.cyr3con.shopapi.shopapi.query.service
+com.cyr3con.shopapi.shopapi.repository

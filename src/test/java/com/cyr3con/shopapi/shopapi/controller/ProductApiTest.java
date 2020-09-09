@@ -1,8 +1,7 @@
 package com.cyr3con.shopapi.shopapi.controller;
 import com.cyr3con.shopapi.shopapi.api.server.ProductApi;
-import com.cyr3con.shopapi.shopapi.domain.Category;
-import com.cyr3con.shopapi.shopapi.domain.Product;
-import com.cyr3con.shopapi.shopapi.query.action.ProductQueryAction;
+import com.cyr3con.shopapi.shopapi.entity.Category;
+import com.cyr3con.shopapi.shopapi.entity.Product;
 import com.cyr3con.shopapi.shopapi.query.service.ProductQueryservice;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -31,6 +30,7 @@ class ProductApiTest {
     private MockMvc mvc;
     @MockBean
     private ProductQueryservice service;
+
     @Test
     public void givenGetPath_thenReturnJsonArray()
             throws Exception {
@@ -46,4 +46,5 @@ class ProductApiTest {
                 .andExpect(jsonPath("$", hasSize(1)))
                 .andExpect(jsonPath("$[0].name", is(product.getName())));
     }
+
 }

@@ -6,4 +6,5 @@
  * <li>classes that uses <code>RestTemplate</code>, <code>WebClient</code>, or
  * any other HTTP client libraries</li>
  * </ul>
- */package com.cyr3con.shopapi.shopapi.api.client;
+ */
+package com.cyr3con.shopapi.shopapi.api.client;

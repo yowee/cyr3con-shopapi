@@ -1,7 +1,9 @@
 package com.cyr3con.shopapi.shopapi.repository;
 
-import com.cyr3con.shopapi.shopapi.domain.Category;
-import com.cyr3con.shopapi.shopapi.domain.Product;
+import com.cyr3con.shopapi.shopapi.entity.CatalogComponent;
+import com.cyr3con.shopapi.shopapi.entity.Category;
+import com.cyr3con.shopapi.shopapi.entity.Product;
+import com.cyr3con.shopapi.shopapi.entity.ProductCatalog;
 import com.cyr3con.shopapi.shopapi.exception.NoProduct;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,31 +14,53 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 @Repository
 public class ProductRepository {
+    /**
+     * Atomic counter to get a thread safe product id and hashmap key
+     */
     private AtomicInteger counter = new AtomicInteger(0);
-    private Map<Integer, Product> producs=new HashMap<>();
+
+    //all products will be saved here
+    private Map<Integer, Product> producs = new HashMap<>();
     final Logger log = LoggerFactory.getLogger(ProductRepository.class);
 
-    public Product addProduct(Product product){
+
+    /**
+     * Save a product to the db (HashMap) and change the id of the product accordingly
+     *
+     * @param product
+     * @return Product
+     */
+    public Product addProduct(Product product) {
+        //get the next id
         int id = counter.incrementAndGet();
+
+        //update the product id
         product.setId(id);
 
-        producs.put(id,product);
-        log.debug(product.toString());
+        //save product to db
+        producs.put(id, product);
+
+        log.info("Save product to db {}", product.toString());
+
         return product;
     }
 
-    public void initProduct(){
-        addProduct(new Product(null,"Mac",2000.0,20,"this is Mac",new Category(1,"laptop","this is laptop")));
-        addProduct(new Product(null,"Iphone",1000.0,10,"this is Iphone",new Category(1,"mobile","this is mobile")));
-    }
 
     public Collection<Product> findAll() {
         return this.producs.values();
     }
 
+
+    /**
+     * @param id Product id
+     * @return
+     */
     public Product getById(Integer id) {
         Product product = producs.get(id);
-        if( product==null) throw new  NoProduct("Unable to find product");
-    return product;
+        log.info("get product by id {}", product);
+
+        if (product == null) throw new NoProduct("Unable to find product");
+
+        return product;
     }
 }

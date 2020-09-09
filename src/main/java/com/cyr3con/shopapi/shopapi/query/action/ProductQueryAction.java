@@ -1,7 +1,7 @@
 package com.cyr3con.shopapi.shopapi.query.action;
 
 
-import com.cyr3con.shopapi.shopapi.domain.Product;
+import com.cyr3con.shopapi.shopapi.entity.Product;
 import com.cyr3con.shopapi.shopapi.exception.NoProduct;
 import com.cyr3con.shopapi.shopapi.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,8 @@ public class ProductQueryAction {
     public Collection<Product> findAll() {
         return productRepository.findAll();
     }
-    public Product getById(Integer id) throws NoProduct {
+
+    public Product getById(Integer id){
         return productRepository.getById(id);
     }
 }
