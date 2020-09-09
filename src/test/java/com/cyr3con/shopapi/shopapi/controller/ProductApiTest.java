@@ -1,4 +1,5 @@
 package com.cyr3con.shopapi.shopapi.controller;
+
 import com.cyr3con.shopapi.shopapi.api.server.ProductApi;
 import com.cyr3con.shopapi.shopapi.entity.Category;
 import com.cyr3con.shopapi.shopapi.entity.Product;
@@ -35,7 +36,7 @@ class ProductApiTest {
     public void givenGetPath_thenReturnJsonArray()
             throws Exception {
 
-        Product product = new Product(null,"Mac",2000.0,20,"this is Mac",new Category(1,"laptop","this is laptop"));
+        Product product = new Product(null, "Mac", 2000.0, 20, "this is Mac", new Category(1, "laptop", "this is laptop"));
 
         List<Product> allProducts = Arrays.asList(product);
         given(service.findAll()).willReturn(allProducts);
